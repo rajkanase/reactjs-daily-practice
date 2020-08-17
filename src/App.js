@@ -11,6 +11,7 @@ import ClassClick from './components/ClassClick';
 import ParentComponent from './components/ParentComponent';
 import Conditional from './components/Conditional';
 import ListRender from './components/ListRender';
+import Stylesheet from './components/Stylesheet';
 
 function App() {
   return (
@@ -28,7 +29,8 @@ function App() {
       {/* <ClassClick /> */}
       {/* <ParentComponent /> */}
       {/* <Conditional /> */}
-      <ListRender />
+      {/* <ListRender /> */}
+      <Stylesheet />
     </div>
   );
 }
