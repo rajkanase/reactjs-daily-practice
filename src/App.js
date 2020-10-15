@@ -12,6 +12,13 @@ import ParentComponent from './components/ParentComponent';
 import Conditional from './components/Conditional';
 import ListRender from './components/ListRender';
 import Stylesheet from './components/Stylesheet';
+import FormComponent from './components/formComponent';
+import LifeCycleA from './components/LifeCycleA';
+import Table from './components/fragments/table';
+import ParentComp from './components/PureComponent/ParentComponent';
+import RefComponent from './components/Refs/RefComponent';
+import ClickedCounter from './components/HigherOrder/ClickedCounter';
+import HoverCounter from './components/HigherOrder/HoverCounter';
 
 function App() {
   return (
@@ -30,7 +37,14 @@ function App() {
       {/* <ParentComponent /> */}
       {/* <Conditional /> */}
       {/* <ListRender /> */}
-      <Stylesheet />
+      {/* <Stylesheet /> */}
+      {/* <FormComponent /> */}
+      {/* <LifeCycleA name="fromParent" /> */}
+      {/* <Table></Table> */}
+      {/* <ParentComp /> */}
+      {/* <RefComponent /> */}
+      <ClickedCounter />
+      <HoverCounter />
     </div>
   );
 }
