@@ -5,7 +5,6 @@ import HelloMessage from './components/Hello';
 import { Functional } from './components/Functional';
 import ClassType from './components/Classtype';
 import StateExample from './components/stateExample';
-import Counter from './components/Counter';
 import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
 import ParentComponent from './components/ParentComponent';
@@ -19,6 +18,10 @@ import ParentComp from './components/PureComponent/ParentComponent';
 import RefComponent from './components/Refs/RefComponent';
 import ClickedCounter from './components/HigherOrder/ClickedCounter';
 import HoverCounter from './components/HigherOrder/HoverCounter';
+import BasicProps from './components/RenderProps/BasicProps';
+import ClickedCounterTwo from './components/RenderProps/ClickedCounterTwo';
+import HoverCounterTwo from './components/RenderProps/HoverCounterTwo';
+import Counter from './components/RenderProps/Counter';
 
 function App() {
   return (
@@ -43,8 +46,12 @@ function App() {
       {/* <Table></Table> */}
       {/* <ParentComp /> */}
       {/* <RefComponent /> */}
-      <ClickedCounter />
-      <HoverCounter />
+      {/* <ClickedCounter />
+      <HoverCounter /> */}
+      {/* <BasicProps name={(isLoggedIn) => isLoggedIn ? 'Rajkumar' : 'Guest'} /> */}
+      <Counter render={(count, incrementCounter) => <ClickedCounterTwo count={count} incrementCounter={incrementCounter}></ClickedCounterTwo>} />
+      <Counter render={(count, incrementCounter) => <HoverCounterTwo count={count} incrementCounter={incrementCounter}></HoverCounterTwo>} />
+
     </div>
   );
 }
